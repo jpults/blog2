@@ -1,0 +1,13 @@
+
+
+Hello <br>
+ <% Post.all.each do |post| %>
+ 	<%= post.title %> <br>
+ 	<%= post.content %> <br>
+ <% end %>
+FLASHES
+ <% flash.each do |name,msg| %>
+ 	<%= name + " " + msg %><br>
+ <% end %>
+SESSIONS:
+  <%= session[:random_number] %>
